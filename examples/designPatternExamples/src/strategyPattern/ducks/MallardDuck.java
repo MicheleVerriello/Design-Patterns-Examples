@@ -1,7 +1,7 @@
-package delegatePattern.ducks;
+package strategyPattern.ducks;
 
-import delegatePattern.behaviours.fly.FlyWithWings;
-import delegatePattern.behaviours.quack.Quack;
+import strategyPattern.behaviours.fly.FlyWithWings;
+import strategyPattern.behaviours.quack.Quack;
 
 public class MallardDuck extends Duck {
 

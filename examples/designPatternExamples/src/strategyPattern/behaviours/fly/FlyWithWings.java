@@ -1,4 +1,4 @@
-package delegatePattern.behaviours.fly;
+package strategyPattern.behaviours.fly;
 
 public class FlyWithWings implements FlyBehaviour {
 

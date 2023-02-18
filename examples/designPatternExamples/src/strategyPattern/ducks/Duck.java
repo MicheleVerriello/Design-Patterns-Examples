@@ -1,7 +1,7 @@
-package delegatePattern.ducks;
+package strategyPattern.ducks;
 
-import delegatePattern.behaviours.fly.FlyBehaviour;
-import delegatePattern.behaviours.quack.QuackBehaviour;
+import strategyPattern.behaviours.fly.FlyBehaviour;
+import strategyPattern.behaviours.quack.QuackBehaviour;
 
 public abstract class Duck {
     QuackBehaviour quackBehaviour;
@@ -23,4 +23,11 @@ public abstract class Duck {
         quackBehaviour.quack();
     }
 
+    public void setQuackBehaviour(QuackBehaviour qb) {
+        quackBehaviour = qb;
+    }
+
+    public void setFlyBehaviour(FlyBehaviour fb) {
+        flyBehaviour = fb;
+    }
 }
