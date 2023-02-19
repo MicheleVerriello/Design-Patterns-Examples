@@ -4,8 +4,8 @@ import strategyPattern.behaviours.fly.FlyBehaviour;
 import strategyPattern.behaviours.quack.QuackBehaviour;
 
 public abstract class Duck {
-    QuackBehaviour quackBehaviour;
-    FlyBehaviour flyBehaviour;
+    QuackBehaviour quackBehaviour; //composition
+    FlyBehaviour flyBehaviour; //composition
 
     public Duck(){}
 
@@ -23,11 +23,11 @@ public abstract class Duck {
         quackBehaviour.quack();
     }
 
-    public void setQuackBehaviour(QuackBehaviour qb) {
+    public void setQuackBehaviour(QuackBehaviour qb) { //change quack behaviour at runtime
         quackBehaviour = qb;
     }
 
-    public void setFlyBehaviour(FlyBehaviour fb) {
+    public void setFlyBehaviour(FlyBehaviour fb) { //change fly behaviour at runtime
         flyBehaviour = fb;
     }
 }
