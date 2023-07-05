@@ -9,4 +9,9 @@ public class DecoratorPatternTest {
     public void testOkForActions() {
         Assert.assertTrue(true);
     }
+
+    @Test
+    public void testNotOkForActions() {
+        Assert.assertTrue(false);
+    }
 }
