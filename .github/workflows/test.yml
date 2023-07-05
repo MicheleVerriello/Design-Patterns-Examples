@@ -26,3 +26,9 @@ jobs:
 
       - name: Run tests
         run: mvn test --quiet --batch-mode
+
+      - name: Distribute Artifact
+        uses: actions/upload-artifact@v2
+        with:
+         name: distribution
+         path: target/
