@@ -16,6 +16,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
+          distribution: 'adopt'
           java-version: '17'  # Specify the Java version you need
 
       - name: Checkout code
@@ -27,8 +28,8 @@ jobs:
       - name: Run tests
         run: mvn test --quiet --batch-mode
 
-      - name: Distribute Artifact
-        uses: actions/upload-artifact@v2
-        with:
-         name: distribution
-         path: target/
+#      - name: Distribute Artifact
+#        uses: actions/upload-artifact@v2
+#        with:
+#         name: distribution
+#         path: target/
